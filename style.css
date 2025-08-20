@@ -1,0 +1,91 @@
+:root {
+  --bg: #0f172a;       /* Dark background */
+  --text: #f8fafc;     /* Light text */
+  --accent: #6366f1;   /* Indigo */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+#countdown {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.time-box {
+  background: rgba(99,102,241,0.15);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  width: 80px;
+}
+
+.time-box span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.time-box small {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.notify-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.notify-form input {
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: none;
+  min-width: 220px;
+}
+
+.notify-form button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.notify-form button:hover {
+  background: #4f46e5;
+}
